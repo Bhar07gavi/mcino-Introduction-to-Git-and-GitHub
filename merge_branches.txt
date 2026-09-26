@@ -1,0 +1,11 @@
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ git add .
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ git commit -m "Fix Typo"
+[main 3f89674] Fix Typo
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ git merge bug-fix-typo
+merge: bug-fix-typo - not something we can merge
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ 
