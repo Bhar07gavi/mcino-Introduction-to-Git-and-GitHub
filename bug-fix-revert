@@ -1,0 +1,39 @@
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ git checkout -b bug-fix-typo
+Switched to a new branch 'bug-fix-typo'
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (bug-fix-typo) $ git add .
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (bug-fix-typo) $ git commit -m "Fix typo"
+[bug-fix-typo 22068fe] Fix typo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (bug-fix-typo) $ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ git merge bug-fix-typo
+Updating 3f89674..22068fe
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ git push origin bug-fix-typo
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 554 bytes | 554.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'bug-fix-typo' on GitHub by visiting:
+remote:      https://github.com/Bhar07gavi/mcino-Introduction-to-Git-and-GitHub/pull/new/bug-fix-typo
+remote: 
+To https://github.com/Bhar07gavi/mcino-Introduction-to-Git-and-GitHub
+ * [new branch]      bug-fix-typo -> bug-fix-typo
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $  git push origin main
+To https://github.com/Bhar07gavi/mcino-Introduction-to-Git-and-GitHub
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Bhar07gavi/mcino-Introduction-to-Git-and-GitHub'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+@Bhar07gavi ➜ /workspaces/mcino-Introduction-to-Git-and-GitHub (main) $ 
