@@ -12,3 +12,4 @@ Output as follows
 ```
 
 _© 2022 XYZ, Inc._
+Typo fix: correcting README wording.
